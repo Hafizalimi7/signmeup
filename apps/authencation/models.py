@@ -30,7 +30,7 @@ class User(AbstractBaseUser):
     
   @property
   def is_staff(self):
-      return self.admin
+      return self.is_admin
 
   def __str__(self):
       return self.email
